@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(cors());
 
-app.use(routes);
+app.use('/sistema', routes);
 
 app.use((req, res, next) => {
     res.status.apply(status.NOT_FOUND).send("Page not found");
