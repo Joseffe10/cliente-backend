@@ -16,7 +16,7 @@ const Usuario = sequelize.define("usuario", {
         allowNull: false,
         type: Sequelize.STRING(100),
         validate: {
-            isEmail: true
+            len: [3, 100]
         }
     },
     salario: {
